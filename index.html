@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LUZ EN EL CAMINO – Tu compañero diario de fe. La app de Biblia moderna que te inspira, guía y acerca a Dios cada día." />
+  <meta name="theme-color" content="#D4A24C" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="public/icon.svg" />
+  <title>Luz en el Camino – La Palabra que ilumina tu vida</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       HEADER / NAVBAR
+  ============================================== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+
+      <!-- Logo -->
+      <a href="#inicio" class="header__logo" id="logo" aria-label="Ir al inicio">
+        <img src="public/icon.svg" alt="Ícono Biblia" class="logo-icon logo-icon--img" width="34" height="34" />
+        <span>LUZ EN EL CAMINO</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="header__nav" aria-label="Navegación principal">
+        <ul class="nav__list" id="nav-list">
+          <li><a href="#inicio"        class="nav__link" data-nav>Inicio</a></li>
+          <li><a href="#caracteristicas" class="nav__link" data-nav>Características</a></li>
+          <li><a href="#sobre"           class="nav__link" data-nav>Sobre el Proyecto</a></li>
+          <li><a href="#testimonios"     class="nav__link" data-nav>Testimonios</a></li>
+          <li><a href="#faq"             class="nav__link" data-nav>FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA + Hamburger -->
+      <div class="header__actions">
+        <a href="#cta" class="btn btn--amber btn--sm" id="btn-header-cta">Descargar App</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-drawer__list">
+        <li><a href="#inicio"          class="mobile-drawer__link" data-nav>Inicio</a></li>
+        <li><a href="#caracteristicas" class="mobile-drawer__link" data-nav>Características</a></li>
+        <li><a href="#sobre"           class="mobile-drawer__link" data-nav>Sobre el Proyecto</a></li>
+        <li><a href="#testimonios"     class="mobile-drawer__link" data-nav>Testimonios</a></li>
+        <li><a href="#faq"             class="mobile-drawer__link" data-nav>FAQ</a></li>
+        <li><a href="#cta"             class="btn btn--amber mobile-drawer__cta" data-nav>Descargar App</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================================
+         HERO SECTION
+    ============================================== -->
+    <section class="hero" id="inicio">
+      <!-- Hero BG: paisaje montañoso al amanecer -->
+      <div class="hero__bg">
+        <img
+          src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&auto=format&fit=crop"
+          alt="Paisaje montañoso al amanecer"
+          class="hero__bg-img"
+          loading="eager"
+        />
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="container hero__inner">
+
+        <!-- Left column: Text -->
+        <div class="hero__text fade-in">
+          <span class="eyebrow">TU COMPAÑERO DIARIO DE FE</span>
+          <h1 class="hero__title">
+            La Palabra que<br />
+            <span class="text--amber">ilumina tu vida</span>
+          </h1>
+          <p class="hero__desc">
+            LUZ EN EL CAMINO es una app de Biblia moderna diseñada para inspirarte,
+            guiarte y acercarte más a Dios cada día.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero__ctas">
+            <a href="#cta" class="btn btn--amber" id="btn-hero-download">
+              <i class="fa-solid fa-download"></i> Descargar Gratis
+            </a>
+            <a href="#caracteristicas" class="hero__link-play" id="btn-hero-conoce">
+              <span class="play-circle"><i class="fa-solid fa-play"></i></span>
+              Conoce más
+            </a>
+          </div>
+
+          <!-- Store Badges -->
+          <div class="store-badges">
+            <a href="#" class="store-badge" id="badge-google" aria-label="Disponible en Google Play">
+              <i class="fa-brands fa-google-play"></i>
+              <span><small>DISPONIBLE EN</small><strong>Google Play</strong></span>
+            </a>
+            <a href="#" class="store-badge" id="badge-apple" aria-label="Consíguelo en el App Store">
+              <i class="fa-brands fa-apple"></i>
+              <span><small>CONSÍGUELO EN</small><strong>App Store</strong></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: Phone Mockup -->
+        <div class="hero__mockup fade-in fade-in--delay">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <!-- Simulated App UI -->
+              <div class="app-ui">
+                <div class="app-ui__header">
+                  <span class="app-ui__title">Tu Biblia</span>
+                  <div class="app-ui__icons">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-regular fa-user-circle"></i>
+                  </div>
+                </div>
+
+                <div class="app-ui__cards">
+                  <div class="app-card app-card--img">
+                    <img src="https://images.unsplash.com/photo-1501854140801-50d01698950b?w=300&auto=format&fit=crop" alt="Palabra de Hoy" />
+                    <span>Palabra de Hoy</span>
+                  </div>
+                  <div class="app-card app-card--img">
+                    <img src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=300&auto=format&fit=crop" alt="Reflexión" />
+                    <span>Reflexión</span>
+                  </div>
+                </div>
+
+                <div class="app-ui__search">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <span>Pregunta algo sobre la Biblia...</span>
+                </div>
+
+                <div class="app-ui__suggestions">
+                  <p class="suggestions-label">Sugerencias para ti</p>
+                  <div class="suggestion-item"><span>De qué quieres hablar</span><i class="fa-solid fa-chevron-right"></i></div>
+                  <div class="suggestion-item"><span>Historias como las tuyas</span><i class="fa-solid fa-chevron-right"></i></div>
+                  <div class="suggestion-item"><span>Salmos para dormir</span><i class="fa-solid fa-chevron-right"></i></div>
+                </div>
+
+                <div class="app-ui__bottomnav">
+                  <div class="bottom-nav-item bottom-nav-item--active">
+                    <i class="fa-solid fa-house"></i><span>Inicio</span>
+                  </div>
+                  <div class="bottom-nav-item">
+                    <i class="fa-regular fa-bookmark"></i><span>Guardados</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =============================================
+         CARACTERÍSTICAS
+    ============================================== -->
+    <section class="features" id="caracteristicas">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">CARACTERÍSTICAS</span>
+          <h2>Todo lo que necesitas para<br />crecer en tu fe</h2>
+        </div>
+
+        <div class="features__grid">
+
+          <article class="feature-card fade-in" id="feature-leer">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-book-open"></i>
+            </div>
+            <h3>Lee y estudia</h3>
+            <p>Accede a la Biblia completa con una lectura clara y moderna.</p>
+          </article>
+
+          <article class="feature-card fade-in" id="feature-palabra">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-sun"></i>
+            </div>
+            <h3>Palabra de Hoy</h3>
+            <p>Recibe inspiración diaria con versículos y reflexiones especiales.</p>
+          </article>
+
+          <article class="feature-card fade-in" id="feature-notas">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <h3>Notas y Favoritos</h3>
+            <p>Guarda tus versículos favoritos y añade notas personales.</p>
+          </article>
+
+          <article class="feature-card fade-in" id="feature-recordatorios">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <h3>Recordatorios</h3>
+            <p>Establece recordatorios para orar, leer y meditar la Palabra.</p>
+          </article>
+
+          <article class="feature-card fade-in" id="feature-noche">
+            <div class="feature-card__icon">
+              <i class="fa-solid fa-moon"></i>
+            </div>
+            <h3>Modo Noche</h3>
+            <p>Lectura cómoda en cualquier momento del día o la noche.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SOBRE EL PROYECTO
+    ============================================== -->
+    <section class="about" id="sobre">
+      <div class="container">
+        <div class="about__inner">
+
+          <!-- Left -->
+          <div class="about__text fade-in">
+            <span class="eyebrow">SOBRE EL PROYECTO</span>
+            <h2>Fe, tecnología y propósito<br />en un solo lugar</h2>
+            <p>
+              LUZ EN EL CAMINO nació con el propósito de unir la sabiduría eterna
+              de la Biblia con la tecnología actual. Queremos que tengas una
+              experiencia espiritual profunda, accesible y personalizada.
+            </p>
+            <ul class="about__checks">
+              <li><i class="fa-solid fa-circle-check"></i> Diseñada para acompañarte en tu caminar con Dios.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Enfocada en tu crecimiento espiritual diario.</li>
+              <li><i class="fa-solid fa-circle-check"></i> Privada, segura y sin distracciones.</li>
+            </ul>
+          </div>
+
+          <!-- Right: Quote Card -->
+          <div class="about__quote-card fade-in fade-in--delay">
+            <!-- reemplazar por imagen real de manos orando -->
+            <img
+              src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=600&auto=format&fit=crop"
+              alt="Manos orando sobre una Biblia abierta"
+              class="about__quote-bg"
+            />
+            <div class="about__quote-overlay"></div>
+            <div class="about__quote-content">
+              <i class="fa-solid fa-quote-left about__quote-icon"></i>
+              <blockquote>
+                "Tu palabra es una lámpara a mis pies; es una luz en mi sendero."
+              </blockquote>
+              <cite>Salmo 119:105</cite>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TESTIMONIOS
+    ============================================== -->
+    <section class="testimonials" id="testimonios">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">TESTIMONIOS</span>
+          <h2>Lo que dicen nuestros usuarios</h2>
+        </div>
+
+        <div class="testimonials__wrapper fade-in">
+          <div class="testimonials__track" id="testimonials-track">
+
+            <!-- Testimonio 1 -->
+            <article class="testimonial-card" id="testimonio-1">
+              <!-- reemplazar por avatar real -->
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&auto=format&fit=crop&q=80"
+                alt="Avatar María G."
+                class="testimonial-card__avatar"
+              />
+              <blockquote class="testimonial-card__quote">
+                "Esta app ha cambiado mi manera de leer la Biblia. La palabra de hoy siempre llega en el momento exacto."
+              </blockquote>
+              <strong class="testimonial-card__name">María G.</strong>
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <!-- Testimonio 2 -->
+            <article class="testimonial-card" id="testimonio-2">
+              <img
+                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=120&auto=format&fit=crop&q=80"
+                alt="Avatar Carlos M."
+                class="testimonial-card__avatar"
+              />
+              <blockquote class="testimonial-card__quote">
+                "Me encanta el diseño y lo fácil que es encontrar inspiración cada día. La uso todos los días."
+              </blockquote>
+              <strong class="testimonial-card__name">Carlos M.</strong>
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+            <!-- Testimonio 3 -->
+            <article class="testimonial-card" id="testimonio-3">
+              <img
+                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=120&auto=format&fit=crop&q=80"
+                alt="Avatar Ana L."
+                class="testimonial-card__avatar"
+              />
+              <blockquote class="testimonial-card__quote">
+                "Finalmente una app de Biblia moderna, completa y gratuita. ¡Muy recomendada!"
+              </blockquote>
+              <strong class="testimonial-card__name">Ana L.</strong>
+              <div class="testimonial-card__stars" aria-label="5 de 5 estrellas">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </article>
+
+          </div><!-- /.testimonials__track -->
+
+          <!-- Dots -->
+          <div class="testimonials__dots" id="testimonials-dots" aria-label="Controles de carrusel">
+            <button class="dot dot--active" data-index="0" aria-label="Testimonio 1"></button>
+            <button class="dot" data-index="1" aria-label="Testimonio 2"></button>
+            <button class="dot" data-index="2" aria-label="Testimonio 3"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         FAQ
+    ============================================== -->
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="eyebrow">FAQ</span>
+          <h2>Preguntas frecuentes</h2>
+        </div>
+
+        <div class="faq__list fade-in">
+
+          <details class="faq__item" id="faq-1">
+            <summary class="faq__question">
+              ¿La app es completamente gratuita?
+              <i class="fa-solid fa-chevron-down faq__icon"></i>
+            </summary>
+            <p class="faq__answer">Sí, LUZ EN EL CAMINO es completamente gratuita. Puedes acceder a todas las funciones sin costo alguno.</p>
+          </details>
+
+          <details class="faq__item" id="faq-2">
+            <summary class="faq__question">
+              ¿En qué plataformas está disponible?
+              <i class="fa-solid fa-chevron-down faq__icon"></i>
+            </summary>
+            <p class="faq__answer">Disponible en Android (Google Play) e iOS (App Store). Próximamente también en versión web.</p>
+          </details>
+
+          <details class="faq__item" id="faq-3">
+            <summary class="faq__question">
+              ¿Necesito internet para usarla?
+              <i class="fa-solid fa-chevron-down faq__icon"></i>
+            </summary>
+            <p class="faq__answer">Puedes descargar versículos y lecturas para acceder sin conexión en cualquier momento.</p>
+          </details>
+
+          <details class="faq__item" id="faq-4">
+            <summary class="faq__question">
+              ¿Qué versiones de la Biblia incluye?
+              <i class="fa-solid fa-chevron-down faq__icon"></i>
+            </summary>
+            <p class="faq__answer">Incluye múltiples traducciones: Reina Valera 1960, NVI, LBLA y más, con actualizaciones constantes.</p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CTA FINAL (Banda oscura)
+    ============================================== -->
+    <section class="cta-band" id="cta">
+      <div class="container cta-band__inner fade-in">
+
+        <!-- App Icon / Illustration -->
+        <div class="cta-band__image">
+          <img
+            src="public/icon.svg"
+            alt="Ícono Luz en el Camino – Biblia dorada con rayos de sol"
+            class="cta-band__img cta-band__img--icon"
+          />
+        </div>
+
+        <!-- Text -->
+        <div class="cta-band__text">
+          <h2>Lleva la luz de Dios contigo<br />a donde quiera que vayas.</h2>
+          <p>Descarga LUZ EN EL CAMINO y comienza tu viaje espiritual hoy.</p>
+        </div>
+
+        <!-- Store Badges -->
+        <div class="cta-band__badges">
+          <a href="#" class="store-badge store-badge--light" id="cta-badge-google" aria-label="Disponible en Google Play">
+            <i class="fa-brands fa-google-play"></i>
+            <span><small>DISPONIBLE EN</small><strong>Google Play</strong></span>
+          </a>
+          <a href="#" class="store-badge store-badge--light" id="cta-badge-apple" aria-label="Consíguelo en el App Store">
+            <i class="fa-brands fa-apple"></i>
+            <span><small>CONSÍGUELO EN</small><strong>App Store</strong></span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+  ============================================== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <img src="public/icon.svg" alt="Biblia dorada" class="logo-icon logo-icon--img" width="28" height="28" />
+          <span>LUZ EN EL CAMINO</span>
+        </div>
+        <p class="footer__tagline">La Palabra que ilumina tu vida</p>
+      </div>
+
+      <div class="footer__links">
+        <a href="#" id="footer-privacidad">Política de Privacidad</a>
+      </div>
+
+    </div>
+
+    <div class="footer__copyright">
+      <p>© 2026 Luz en el Camino. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="index.js"></script>
+</body>
+</html>
